@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/vamsipenmetsa.png" width="150" height="150" style="border-radius: 50%; border: 4px solid #2c3e50;" alt="Vamsi Penmetsa"/>
+  <img src="https://github.com/vamsipenmetsa/who-is-vamsi-penmetsa/blob/main/public/vamsi-profile.jpg?raw=true" width="180" height="180" style="border-radius: 50%; border: 4px solid #2c3e50;" alt="Vamsi Penmetsa"/>
   
   <h1 align="center">Hi, I'm Vamsi Penmetsa 👋</h1>
   
@@ -12,10 +12,19 @@
     <i>Based in Warsaw, Poland 🇵🇱</i>
   </p>
 
+  <!-- LinkedIn Highlights -->
   <div align="center">
     <a href="https://linkedin.com/in/vamsipenmetsa" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+      <img src="https://img.shields.io/badge/LinkedIn-30k%2B%20Followers-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Followers"/>
     </a>
+    <a href="https://linkedin.openinapp.co/groups-13986647" target="_blank">
+      <img src="https://img.shields.io/badge/Group-15k%2B%20DevOps%20Members-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Group"/>
+    </a>
+  </div>
+  
+  <br>
+
+  <div align="center">
     <a href="https://topmate.io/vamsipenmetsa" target="_blank">
       <img src="https://img.shields.io/badge/Topmate-Book%20Session-FF5722?style=for-the-badge&logo=google-meet&logoColor=white" alt="Topmate"/>
     </a>
@@ -77,8 +86,8 @@ I love building communities and capturing moments!
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vamsipenmetsa&show_icons=true&theme=radical&include_all_commits=true&count_private=true" height="180" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vamsipenmetsa&layout=compact&theme=radical&hide_border=true" height="180" alt="languages graph" />
+  <img src="https://github-readme-stats.vercel.app/api?username=vamsipenmetsa&show_icons=true&theme=radical" height="180" alt="stats graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vamsipenmetsa&layout=compact&theme=radical" height="180" alt="languages graph" />
 </div>
 
 <br>
