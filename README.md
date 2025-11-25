@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/vamsipenmetsa/who-is-vamsi-penmetsa/blob/main/public/vamsi-profile.jpg?raw=true" width="180" height="180" style="border-radius: 50%; border: 4px solid #2c3e50;" alt="Vamsi Penmetsa"/>
+  <img src="https://github.com/vamsipenmetsa/who-is-vamsi-penmetsa/blob/main/public/vamsi-profile.jpg?raw=true" width="200" height="200" style="border-radius: 50%; border: 4px solid #2c3e50; object-fit: cover;" alt="Vamsi Penmetsa"/>
   
   <h1 align="center">Hi, I'm Vamsi Penmetsa 👋</h1>
   
