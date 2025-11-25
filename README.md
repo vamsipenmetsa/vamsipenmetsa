@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/vamsipenmetsa/who-is-vamsi-penmetsa/blob/main/public/vamsi-profile.jpg?raw=true" width="200" height="200" style="border-radius: 50%; border: 4px solid #2c3e50; object-fit: cover;" alt="Vamsi Penmetsa"/>
+  <img src="https://github.com/vamsipenmetsa.png" width="180" height="180" style="border-radius: 50%; border: 4px solid #2c3e50;" alt="Vamsi Penmetsa"/>
   
   <h1 align="center">Hi, I'm Vamsi Penmetsa 👋</h1>
   
@@ -82,15 +82,6 @@ I love building communities and capturing moments!
 | *Curated street photography* | *Organizer of 1,000+ member club* |
 
 ---
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vamsipenmetsa&show_icons=true&theme=radical" height="180" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vamsipenmetsa&layout=compact&theme=radical" height="180" alt="languages graph" />
-</div>
-
-<br>
 
 <!-- Snake Animation -->
 <div align="center">
