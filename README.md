@@ -1,15 +1,15 @@
 <div align="center">
-  <img src="https://github.com/vamsipenmetsa/who-is-vamsi-penmetsa/blob/main/public/vamsi-profile.jpg?raw=true" width="150" height="150" style="border-radius: 50%; border: 4px solid #2c3e50;" alt="Vamsi Penmetsa"/>
+  <img src="https://github.com/vamsipenmetsa.png" width="150" height="150" style="border-radius: 50%; border: 4px solid #2c3e50;" alt="Vamsi Penmetsa"/>
   
-  <h1 align="center">Hi, I'm Vamsi Penmetsa 👋</h1>
+  <h1 align="center">Hi, I'm Vamsi Penmetsa</h1>
   
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=2C3E50&center=true&vCenter=true&width=500&lines=Lead+DevOps+%26+Platform+Engineer;Building+ML%2FLLM+Platforms+at+Scale;12%2B+Certified+%7C+150%2B+Interviews;EPAM+AI+Ambassador+%7C+Tech+Speaker" alt="Typing SVG" />
   </a>
 
   <p align="center">
-    <b>Architecting a Modeling-as-a-Service platform for LSEG × Microsoft UK on Azure 🇬🇧</b><br>
-    <i>Based in Warsaw, Poland 🇵🇱 | 🇮🇳 India → 🇵🇱 Poland (since 2022)</i>
+    <b>Architecting a Modeling-as-a-Service platform for LSEG x Microsoft UK on Azure</b><br>
+    <i>Based in Warsaw, Poland | India to Poland (since 2022)</i>
   </p>
 
   <div align="center">
@@ -33,25 +33,25 @@
   <img src="https://img.shields.io/badge/150%2B-Technical%20Interviews-FF5722?style=flat-square" />
   <img src="https://img.shields.io/badge/EPAM-AI%20Ambassador-6C3483?style=flat-square" />
   <img src="https://img.shields.io/badge/Microsoft-Copilot%20Champion-00BCF2?style=flat-square" />
-  <img src="https://img.shields.io/badge/🎤-Tech%20Speaker-E67E22?style=flat-square" />
+  <img src="https://img.shields.io/badge/Tech-Speaker-E67E22?style=flat-square" />
 </div>
 
 <br>
 
-## 🚀 About Me
+## About Me
 
-I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterprise scale**. I've navigated the journey from Manual Testing → Automation → DevOps → SRE → Platform Engineering → Cloud/AI.
+I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterprise scale**. I've navigated the journey from Manual Testing to Automation to DevOps to SRE to Platform Engineering to Cloud/AI.
 
-- 🔭 Currently architecting a **Modeling-as-a-Service platform** for **LSEG × Microsoft UK** on Azure
-- 🤝 **EPAM AI Ambassador** & **Microsoft Copilot Champion**
-- 👨‍🏫 Conducted **150+ Technical Interviews** (Azure, DevOps, SRE, AWS) and love mentoring
-- 🎤 **Tech Speaker** — Spoke at the **82nd Microsoft Azure User Group Poland meetup**
-- ☁️ **12+ Certified** across Azure, AWS & GitHub
-- 🏢 Worked with **LSEG, IMF, WTW, UBS, Corteva, Microsoft**
+- Currently architecting a **Modeling-as-a-Service platform** for **LSEG x Microsoft UK** on Azure
+- **EPAM AI Ambassador** & **Microsoft Copilot Champion**
+- Conducted **150+ Technical Interviews** (Azure, DevOps, SRE, AWS) and love mentoring
+- **Tech Speaker** — Spoke at the **82nd Microsoft Azure User Group Poland meetup**
+- **12+ Certified** across Azure, AWS & GitHub
+- Worked with **LSEG, IMF, WTW, UBS, Corteva, Microsoft**
 
 ---
 
-## 🎤 Featured Talk — Azure Meetup #82
+## Featured Talk — Azure Meetup #82
 
 <div align="center">
   <img src="https://github.com/vamsipenmetsa/vamsipenmetsa-portfolio/blob/main/public/Vamsi_Tech_talk.JPG?raw=true" width="700" alt="Vamsi Penmetsa speaking at Microsoft Azure User Group Poland meetup at EPAM Warsaw office"/>
@@ -61,10 +61,10 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 
 > **"The Blind Spots We Didn't Know We Had — Splitting Observability Between Datadog & Azure Log Analytics"**
 >
-> 📅 15 April 2026 · 19:00 – 19:45
-> 📍 EPAM Warsaw Office — 82nd Microsoft Azure User Group Poland Meetup
-> 👥 **112 registered · 65 attended** · Hosted by Tomasz W. & Marek G.
-> 💡 Based on hands-on experience from the **LSEG × Microsoft** project
+> 15 April 2026 | 19:00 – 19:45
+> EPAM Warsaw Office — 82nd Microsoft Azure User Group Poland Meetup
+> **112 registered | 65 attended** | Hosted by Tomasz W. & Marek G.
+> Based on hands-on experience from the **LSEG x Microsoft** project
 
 ### Speaker Feedback
 
@@ -93,32 +93,44 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 
 ---
 
-## 🏆 Certifications
+## Certifications
 
 <div align="center">
 
-#### ☁️ Microsoft Azure (7x)
+### Microsoft Azure (7x)
 
-<img src="https://img.shields.io/badge/Azure%20Solutions%20Architect%20Expert-AZ--305-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-<img src="https://img.shields.io/badge/Azure%20DevOps%20Engineer%20Expert-AZ--400-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-<br>
-<img src="https://img.shields.io/badge/Azure%20Security%20Engineer-AZ--500-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-<img src="https://img.shields.io/badge/Azure%20Developer-AZ--204-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-<br>
-<img src="https://img.shields.io/badge/Azure%20Administrator-AZ--104-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-<img src="https://img.shields.io/badge/Azure%20Fundamentals-AZ--900-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-<br>
-<img src="https://img.shields.io/badge/Designing%20%26%20Implementing%20DevOps-AZ--400-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/">
+  <img src="https://images.credly.com/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png" width="120" alt="Azure Solutions Architect Expert (AZ-305)"/>
+</a>
+<a href="https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/">
+  <img src="https://images.credly.com/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png" width="120" alt="Azure DevOps Engineer Expert (AZ-400)"/>
+</a>
+<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/">
+  <img src="https://images.credly.com/images/1ad16b6f-2c71-4a2e-ae74-ec69c4766039/azure-security-engineer-associate600x600.png" width="120" alt="Azure Security Engineer Associate (AZ-500)"/>
+</a>
+<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/">
+  <img src="https://images.credly.com/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png" width="120" alt="Azure Developer Associate (AZ-204)"/>
+</a>
+<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/">
+  <img src="https://images.credly.com/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png" width="120" alt="Azure Administrator Associate (AZ-104)"/>
+</a>
+<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/">
+  <img src="https://images.credly.com/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png" width="120" alt="Azure Fundamentals (AZ-900)"/>
+</a>
 
-#### 🟠 Amazon Web Services
+### Amazon Web Services
 
-<img src="https://img.shields.io/badge/AWS%20Certified%20AI%20Practitioner-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+<a href="https://aws.amazon.com/certification/certified-ai-practitioner/">
+  <img src="https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" width="120" alt="AWS Certified AI Practitioner"/>
+</a>
 
-#### 🐙 GitHub
+### GitHub
 
-<img src="https://img.shields.io/badge/GitHub%20Copilot-GH--300-181717?style=for-the-badge&logo=github&logoColor=white" />
+<a href="https://resources.github.com/learn/certifications/">
+  <img src="https://images.credly.com/images/6b924fae-3cd7-4233-b012-97413c62c85d/blob" width="120" alt="GitHub Copilot (GH-300)"/>
+</a>
 
-#### 🧠 AI & Leadership
+### AI & Leadership
 
 <img src="https://img.shields.io/badge/EPAM%20AI%20Masterclass%20Excellence-6C3483?style=for-the-badge" />
 <img src="https://img.shields.io/badge/EPAM%20Prompts%20%26%20Game%20Mastery-6C3483?style=for-the-badge" />
@@ -127,7 +139,7 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=azure,aws,kubernetes,docker,terraform,python,bash,githubactions,grafana,prometheus,linux,git,vscode,gitlab&perline=7" />
@@ -135,15 +147,14 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 
 ---
 
-## 🌟 What People Say
+## What People Say
 
-### 💬 Mentorship & Coaching
+### Mentorship & Coaching
 
 <table>
 <tr>
 <td width="50%">
 
-> ⭐⭐⭐⭐⭐
 > *"I successfully passed last technical interview. Thank you for your recommendation to try to behave as I am already middle... I am so excited and grateful!"*
 >
 > — **Mariia**, Aspiring DevOps Engineer
@@ -151,7 +162,6 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 </td>
 <td width="50%">
 
-> ⭐⭐⭐⭐⭐
 > *"I had a wonderful session with Vamsi, his insights regarding DevOps and associated tools and technologies are very valuable."*
 >
 > — **Sumeet Khastgir**, Dec 2025
@@ -161,16 +171,15 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 <tr>
 <td colspan="2">
 
-> ⭐⭐⭐⭐⭐
 > *"The session provided a clear 5-phase roadmap for my EU job search — resume refocus, LinkedIn strategy, intentional skill building, smart job tactics, and realistic market entry. Structured, no-fluff guidance. Highly recommend connecting with Vamsi."*
 >
-> — **Ram Kumar R**, Cloud/DevOps · EU Job Search
+> — **Ram Kumar R**, Cloud/DevOps | EU Job Search
 
 </td>
 </tr>
 </table>
 
-### 📋 Interview Feedback (150+ Technical Interviews)
+### Interview Feedback (150+ Technical Interviews)
 
 <table>
 <tr>
@@ -178,7 +187,7 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 
 > *"The interview was honestly one of the best I've had the pleasure of attending. The questions were well thought out and the tasks actually tested real skills, which I really appreciated. It left me with a very good impression of the company, and I'm definitely keen to move forward."*
 >
-> — **Mikolaj B.**, Interview Candidate · Feedback shared via HR · April 2026
+> — **Mikolaj B.**, Interview Candidate | Feedback shared via HR | April 2026
 
 </td>
 <td width="40%">
@@ -191,16 +200,16 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 
 ---
 
-## 📸 Creative Projects & Communities
+## Creative Projects & Communities
 
-| **Poland Streets 📸** | **International Friends Warsaw 🌍** |
+| **Poland Streets** | **International Friends Warsaw** |
 |:---:|:---:|
 | <a href="https://www.instagram.com/poland_streets"><img src="https://img.shields.io/badge/Instagram-3M%2B%20Views-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a> | <a href="https://www.instagram.com/international_friends_wawa"><img src="https://img.shields.io/badge/Instagram-Community-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a> |
 | *Curated street photography* | *Organizer of 1,000+ member club* |
 
 ---
 
-## 🎁 Free Resources
+## Free Resources
 
 I believe in giving back to the community. Grab these for free!
 
