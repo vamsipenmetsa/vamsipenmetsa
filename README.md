@@ -99,7 +99,7 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 
 ### Microsoft Azure (7x)
 
-<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/">
+<a href="https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/25D93904B41DCA95?sharingId=C12B7F6430996004">
   <img src="https://images.credly.com/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png" width="120" alt="Azure Solutions Architect Expert (AZ-305)"/>
 </a>
 <a href="https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/9A6A85340BFB87D5?sharingId=C12B7F6430996004">
