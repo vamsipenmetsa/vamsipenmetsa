@@ -102,16 +102,16 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/">
   <img src="https://images.credly.com/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png" width="120" alt="Azure Solutions Architect Expert (AZ-305)"/>
 </a>
-<a href="https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/">
+<a href="https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/9A6A85340BFB87D5?sharingId=C12B7F6430996004">
   <img src="https://images.credly.com/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png" width="120" alt="Azure DevOps Engineer Expert (AZ-400)"/>
 </a>
-<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/">
+<a href="https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/4E16B2FDA09E8AF6?sharingId=C12B7F6430996004">
   <img src="https://images.credly.com/images/1ad16b6f-2c71-4a2e-ae74-ec69c4766039/azure-security-engineer-associate600x600.png" width="120" alt="Azure Security Engineer Associate (AZ-500)"/>
 </a>
-<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/">
+<a href="https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/D01EC7BE672BE6F9?sharingId=C12B7F6430996004">
   <img src="https://images.credly.com/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png" width="120" alt="Azure Developer Associate (AZ-204)"/>
 </a>
-<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/">
+<a href="https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/425394C45CA3A75A?sharingId=C12B7F6430996004">
   <img src="https://images.credly.com/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png" width="120" alt="Azure Administrator Associate (AZ-104)"/>
 </a>
 <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/">
@@ -120,13 +120,13 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 
 ### Amazon Web Services
 
-<a href="https://aws.amazon.com/certification/certified-ai-practitioner/">
+<a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/b6a32f65459e4763a6ae0c9067be7ef0">
   <img src="https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" width="120" alt="AWS Certified AI Practitioner"/>
 </a>
 
 ### GitHub
 
-<a href="https://resources.github.com/learn/certifications/">
+<a href="https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/287336BFD482D840?sharingId=C12B7F6430996004">
   <img src="https://images.credly.com/images/6b924fae-3cd7-4233-b012-97413c62c85d/blob" width="120" alt="GitHub Copilot (GH-300)"/>
 </a>
 
@@ -217,11 +217,6 @@ I believe in giving back to the community. Grab these for free!
 - [**Kubernetes Cheat Sheet**](https://vamsipenmetsa.gumroad.com/l/knioda) — Complete K8s reference from basics to advanced
 
 ---
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vamsipenmetsa&show_icons=true&theme=radical&hide_border=true" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vamsipenmetsa&layout=compact&theme=radical&hide_border=true" height="150" alt="languages graph" />
-</div>
 
 <div align="center">
   <br>
