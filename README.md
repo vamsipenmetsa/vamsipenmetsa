@@ -19,7 +19,7 @@
     <a href="https://topmate.io/vamsipenmetsa" target="_blank">
       <img src="https://img.shields.io/badge/Topmate-Book%20Session-FF5722?style=for-the-badge&logo=google-meet&logoColor=white" alt="Topmate"/>
     </a>
-    <a href="https://vamsipenmetsa.github.io/vamsipenmetsa-portfolio/" target="_blank">
+    <a href="https://vamsipenmetsa.github.io/portfolio/" target="_blank">
       <img src="https://img.shields.io/badge/Portfolio-2C3E50?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio"/>
     </a>
     <a href="mailto:vamsivarmapenmatsa@gmail.com">
@@ -54,7 +54,7 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 ## Featured Talk — Azure Meetup #82
 
 <div align="center">
-  <img src="https://github.com/vamsipenmetsa/vamsipenmetsa-portfolio/blob/main/public/Vamsi_Tech_talk.JPG?raw=true" width="700" alt="Vamsi Penmetsa speaking at Microsoft Azure User Group Poland meetup at EPAM Warsaw office"/>
+  <img src="https://github.com/vamsipenmetsa/portfolio/blob/main/public/Vamsi_Tech_talk.webp?raw=true" width="700" alt="Vamsi Penmetsa speaking at Microsoft Azure User Group Poland meetup at EPAM Warsaw office"/>
 </div>
 
 <br>
@@ -76,7 +76,7 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 >
 > — **Bogumil Barjasz**, EPAM Poland Cloud Discipline Head
 
-<img src="https://github.com/vamsipenmetsa/vamsipenmetsa-portfolio/blob/main/public/Bogumil_feedback.png?raw=true" width="100%" alt="Feedback from Bogumil Barjasz"/>
+<img src="https://github.com/vamsipenmetsa/portfolio/blob/main/public/Bogumil_feedback.webp?raw=true" width="100%" alt="Feedback from Bogumil Barjasz"/>
 
 </td>
 <td width="50%">
@@ -85,7 +85,7 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 >
 > — **Maciej Deptula**, Azure Architect
 
-<img src="https://github.com/vamsipenmetsa/vamsipenmetsa-portfolio/blob/main/public/Maciej_feedback.png?raw=true" width="100%" alt="Feedback from Maciej Deptula"/>
+<img src="https://github.com/vamsipenmetsa/portfolio/blob/main/public/Maciej_feedback.webp?raw=true" width="100%" alt="Feedback from Maciej Deptula"/>
 
 </td>
 </tr>
@@ -192,7 +192,7 @@ I'm a **Lead DevOps & Platform Engineer** building **ML/LLM platforms at enterpr
 </td>
 <td width="40%">
 
-<img src="https://github.com/vamsipenmetsa/vamsipenmetsa-portfolio/blob/main/public/Interview_feedback_sharedbyHR.png?raw=true" width="100%" alt="Interview feedback from Mikolaj B. shared via HR"/>
+<img src="https://github.com/vamsipenmetsa/portfolio/blob/main/public/Interview_feedback_sharedbyHR.webp?raw=true" width="100%" alt="Interview feedback from Mikolaj B. shared via HR"/>
 
 </td>
 </tr>
@@ -220,7 +220,7 @@ I believe in giving back to the community. Grab these for free!
 
 <div align="center">
   <br>
-  <a href="https://vamsipenmetsa.github.io/vamsipenmetsa-portfolio/">
+  <a href="https://vamsipenmetsa.github.io/portfolio/">
     <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-2C3E50?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio"/>
   </a>
   <a href="https://topmate.io/vamsipenmetsa/1755002">
