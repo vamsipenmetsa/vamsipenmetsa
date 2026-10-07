@@ -84,9 +84,9 @@ main{display:flex;flex-direction:column;gap:clamp(60px,8vw,104px);padding-block:
 :root[data-theme="light"] .dock-btn .sun{display:block}
 :root[data-theme="light"] .dock-btn .moon{display:none}
 
-.scroll-hint{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px)+22px);z-index:50;--r:999px;display:inline-flex;align-items:center;gap:12px;padding:10px 15px 10px 18px;border-radius:999px;font-family:var(--font-mono);font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-2);cursor:pointer;opacity:calc(1 - var(--hero-p,0)*4);transform:translate(-50%,calc(var(--hero-p,0)*48px));visibility:hidden;transition:opacity .35s ease,transform .45s var(--ease-spring),color .25s,visibility 0s linear .45s}
-.hint-on .scroll-hint{visibility:visible;transition:opacity .35s ease,transform .45s var(--ease-spring),color .25s,visibility 0s}
-.scroll-hint:hover{color:var(--fg);transform:translate(-50%,calc(var(--hero-p,0)*48px - 2px))}
+.scroll-hint{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px)+22px);z-index:50;--r:999px;display:inline-flex;align-items:center;gap:12px;padding:10px 15px 10px 18px;border-radius:999px;font-family:var(--font-mono);font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-2);cursor:pointer;opacity:0;transform:translate(-50%,20px);visibility:hidden;transition:opacity .35s ease,transform .45s var(--ease-spring),color .25s,visibility 0s linear .45s}
+.hint-on .scroll-hint{visibility:visible;opacity:1;transform:translate(-50%,0);transition:opacity .35s ease,transform .45s var(--ease-spring),color .25s,visibility 0s}
+.scroll-hint:hover{color:var(--fg);transform:translate(-50%,-2px)}
 .scroll-hint svg{width:16px;height:24px;color:var(--fg);flex:none;overflow:visible}
 .scroll-hint .wheel{animation:wheel 2.1s cubic-bezier(.45,0,.2,1) infinite}
 @keyframes wheel{0%{transform:translateY(0);opacity:1}55%{transform:translateY(7px);opacity:0}56%{transform:translateY(0);opacity:0}100%{transform:translateY(0);opacity:1}}
@@ -161,6 +161,9 @@ main{display:flex;flex-direction:column;gap:clamp(60px,8vw,104px);padding-block:
 
 .holo{--hx:50%;--hy:50%;display:inline-block;font-weight:650;color:transparent;-webkit-text-fill-color:transparent;background-image:radial-gradient(farthest-corner circle at var(--hx) var(--hy),rgba(255,255,255,.95) 0%,rgba(255,255,255,.35) 28%,rgba(255,255,255,0) 60%),repeating-linear-gradient(-33deg,#f5f5f7 0%,#8e8e94 7%,#fff 14%,#5c5c62 21%,#d6d6db 28%,#7a7a80 35%,#f5f5f7 42%);background-size:220% 220%,160% 160%;background-position:var(--hx) var(--hy),calc(var(--hx)*1.6) calc(var(--hy)*1.6);-webkit-background-clip:text;background-clip:text;filter:brightness(1.08) contrast(1.05);transition:background-position .5s cubic-bezier(.22,1,.36,1)}
 .holo.name{display:block;font-weight:inherit}
+.holo-link{display:inline-flex;align-items:baseline;gap:.08em;text-decoration:none}
+.holo-link .mini-arrow{width:.5em;height:.5em;align-self:flex-start;margin-top:.18em;color:var(--fg-3);transition:transform .3s var(--ease-spring),color .3s}
+.holo-link:hover .mini-arrow{transform:translate(2px,-2px);color:var(--fg)}
 :root[data-theme="light"] .holo{background-image:radial-gradient(farthest-corner circle at var(--hx) var(--hy),rgba(255,255,255,.9) 0%,rgba(255,255,255,.2) 28%,rgba(255,255,255,0) 60%),repeating-linear-gradient(-33deg,#3a3a3f 0%,#9a9aa0 7%,#1d1d1f 14%,#b8b8be 21%,#4a4a50 28%,#86868b 35%,#3a3a3f 42%)}
 @media(hover:none){.holo{animation:holo-drift 7s ease-in-out infinite alternate;transition:none}}
 @keyframes holo-drift{0%{background-position:20% 30%,10% 40%}50%{background-position:70% 60%,90% 70%}100%{background-position:35% 85%,40% 120%}}
@@ -207,10 +210,10 @@ main{display:flex;flex-direction:column;gap:clamp(60px,8vw,104px);padding-block:
 .marquee .track{display:flex;gap:14px;width:max-content;animation:scroll 60s linear infinite;padding-inline:7px}
 .marquee:hover .track{animation-play-state:paused}
 @keyframes scroll{to{transform:translateX(-50%)}}
-.tech{--r:20px;width:116px;padding:16px 10px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;transition:transform .4s var(--ease-spring)}
+.tech{--r:16px;width:110px;padding:14px 8px 10px;display:flex;flex-direction:column;align-items:center;gap:8px;transition:transform .4s var(--ease-spring);background:var(--glass);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 .tech:hover{transform:translateY(-4px) scale(1.03)}
-.tech img{width:42px;height:42px;object-fit:contain}
-.tech span{font-family:var(--font-mono);font-size:11.5px;color:var(--fg-2);letter-spacing:.02em;text-align:center}
+.tech img{width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.2))}
+.tech span{font-family:var(--font-mono);font-size:11px;color:var(--fg-2);letter-spacing:.02em;text-align:center;white-space:nowrap}
 
 .talk-card{--r:var(--radius-xl);padding:12px;display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(20px,3vw,40px);align-items:center}
 .talk-photo{border-radius:calc(var(--radius-xl) - 12px);overflow:hidden;box-shadow:inset 0 0 0 1px var(--glass-edge-2)}
@@ -377,11 +380,11 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
         <img src="https://github.com/vamsipenmetsa.png" alt="Vamsi Penmetsa" width="800" height="800" fetchpriority="high">
       </div>
       <div class="float glass float-1">
-        <svg class="float-icon" viewBox="0 0 36 36"><rect width="36" height="36" rx="8" fill="#0078d4"/><text x="18" y="24" text-anchor="middle" fill="#fff" font-size="16" font-weight="700" font-family="system-ui">A</text></svg>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png" alt="Microsoft">
         <div><b>LSEG x Microsoft</b><span>MaaS Platform</span></div>
       </div>
       <div class="float glass float-2">
-        <svg class="float-icon" viewBox="0 0 36 36"><rect width="36" height="36" rx="8" fill="#6C3483"/><text x="18" y="24" text-anchor="middle" fill="#fff" font-size="16" font-weight="700" font-family="system-ui">E</text></svg>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/EPAM_Systems_Logo.svg/512px-EPAM_Systems_Logo.svg.png" alt="EPAM">
         <div><b>EPAM Systems</b><span>AI Ambassador</span></div>
       </div>
     </div>
@@ -391,7 +394,7 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
     <div class="sec-head"><h2>About</h2><span class="meta">Small Village &rarr; Warsaw</span></div>
     <div class="about glass">
       <div class="about-photo"><img src="assets/img/warsaw-snow.jpg" alt="Vamsi in snowy Warsaw Old Town" loading="lazy"></div>
-      <p>I grew up in a small, remote village in southern India where the closest computer was a bus ride away. That kid who was fascinated by how things worked is now building <em>ML/LLM platforms</em> for some of the world's largest financial institutions, from <em>Warsaw, Poland</em>. The path was anything but straight &mdash; <em>Manual Tester</em>, Automation Engineer, DevOps, SRE, Platform Engineer, and now <em>AI Systems Architect</em>. Every pivot was a leap of faith. I share what I've learned because someone once did the same for me.</p>
+      <p>Born in <a class="holo-link" href="https://www.google.com/maps/place/Mogallu,+Andhra+Pradesh,+India" target="_blank" rel="noopener" aria-label="Mogallu on Google Maps"><span class="holo">Mogallu</span><svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>, a small remote village in Andhra Pradesh where the closest computer was a bus ride away, I build today in Warsaw. The path was anything but straight &mdash; <em>Manual Tester</em>, Automation, DevOps, SRE, Platform Engineer, and now <em>AI Systems Architect</em> building ML/LLM platforms for the world's largest financial institutions. Every pivot was a leap of faith. I share what I've learned because someone once did the same for me.</p>
     </div>
   </section>
 
@@ -673,7 +676,7 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
     var hint=document.getElementById("scroll-hint");
     if(hint)hint.addEventListener("click",function(){var about=document.getElementById("about");if(about)about.scrollIntoView({behavior:reduced?"auto":"smooth",block:"start"});else window.scrollTo({top:120,behavior:reduced?"auto":"smooth"})});
     var heroTick=false;
-    function heroUpdate(){heroTick=false;var p=Math.min(1,Math.max(0,window.scrollY/320));hero.style.setProperty("--p",p.toFixed(3));hero.classList.toggle("is-card",p<.98);root.style.setProperty("--hero-p",p.toFixed(3));root.classList.toggle("hint-on",p<.25)}
+    function heroUpdate(){heroTick=false;var p=Math.min(1,Math.max(0,window.scrollY/320));hero.style.setProperty("--p",p.toFixed(3));hero.classList.toggle("is-card",p<.98);root.style.setProperty("--hero-p",p.toFixed(3));root.classList.toggle("hint-on",p>.25)}
     window.addEventListener("scroll",function(){if(!heroTick){heroTick=true;requestAnimationFrame(heroUpdate)}},{passive:true});
     heroUpdate();
   }
