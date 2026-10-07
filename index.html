@@ -139,6 +139,8 @@ main{display:flex;flex-direction:column;gap:clamp(60px,8vw,104px);padding-block:
 .intro-on .hero,.intro-on main>:not(.hero),.intro-on footer{opacity:0}
 .intro-on .dock{opacity:0;transform:translate(-50%,-16px)}
 .intro-on .hero h1{opacity:0}
+.intro-on .scroll-hint{opacity:0}
+.intro-done .scroll-hint,.landing .scroll-hint{opacity:1}
 .intro-done .hero h1{transition:opacity .25s ease}
 .intro.out .intro-h1{transition:opacity .25s ease;opacity:0}
 .intro-on.landing .hero,.intro-on.landing main>:not(.hero),.intro-on.landing footer{opacity:1;transition:opacity calc(1s*var(--k,1)) ease calc(.2s*var(--k,1))}
@@ -704,10 +706,10 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
     var sections=links.map(function(a){return document.querySelector(a.getAttribute("href"))});
     var lock=null,ticking=false;
     function setActive(a){links.forEach(function(l){l.classList.toggle("active",l===a)});moveInd(a)}
-    function pick(){ticking=false;if(lock)return;var ref=window.scrollY+Math.min(window.innerHeight*.35,220);var atBottom=window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-2;var best=null,bestTop=-Infinity;sections.forEach(function(s,i){if(!s)return;var top=s.getBoundingClientRect().top+window.scrollY;if(top<=ref&&top>bestTop){bestTop=top;best=links[i]}});if(atBottom)best=links[links.length-1];if(best)setActive(best)}
+    function pick(){ticking=false;if(lock)return;var ref=window.scrollY+Math.min(window.innerHeight*.35,220);var atBottom=window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-2;var best=null,bestTop=-Infinity;sections.forEach(function(s,i){if(!s)return;var top=s.getBoundingClientRect().top+window.scrollY;if(top<=ref&&top>bestTop){bestTop=top;best=links[i]}});if(atBottom)best=links[links.length-1];if(best){setActive(best)}else{links.forEach(function(l){l.classList.remove("active")});if(ind){ind.style.opacity="0"}}}
     function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(pick)}}
     links.forEach(function(a){a.addEventListener("click",function(){lock=a;setActive(a)})});
-    ["wheel","touchstart","keydown","pointerdown"].forEach(function(ev){window.addEventListener(ev,function(e){if(ev==="pointerdown"&&nav.contains(e.target))return;if(lock){lock=null;onScroll()}},{passive:true})});
+    ["wheel","touchstart","keydown","pointerdown","scroll"].forEach(function(ev){window.addEventListener(ev,function(e){if(ev==="pointerdown"&&nav.contains(e.target))return;if(lock){lock=null;onScroll()}},{passive:true})});
     window.addEventListener("scroll",onScroll,{passive:true});
     window.addEventListener("resize",function(){var a=nav.querySelector("a.active");if(a)moveInd(a)});
     pick();
