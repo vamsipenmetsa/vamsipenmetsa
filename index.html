@@ -165,7 +165,7 @@ main{display:flex;flex-direction:column;gap:clamp(60px,8vw,104px);padding-block:
 .holo-link .mini-arrow{width:.5em;height:.5em;align-self:flex-start;margin-top:.18em;color:var(--fg-3);transition:transform .3s var(--ease-spring),color .3s}
 .holo-link:hover .mini-arrow{transform:translate(2px,-2px);color:var(--fg)}
 :root[data-theme="light"] .holo{background-image:radial-gradient(farthest-corner circle at var(--hx) var(--hy),rgba(255,255,255,.9) 0%,rgba(255,255,255,.2) 28%,rgba(255,255,255,0) 60%),repeating-linear-gradient(-33deg,#3a3a3f 0%,#9a9aa0 7%,#1d1d1f 14%,#b8b8be 21%,#4a4a50 28%,#86868b 35%,#3a3a3f 42%)}
-@media(hover:none){.holo{animation:holo-drift 7s ease-in-out infinite alternate;transition:none}}
+@media(hover:none){.holo{animation:holo-drift 7s ease-in-out infinite alternate;transition:none}.intro{display:none!important}.intro-on .hero,.intro-on main>:not(.hero),.intro-on footer,.intro-on .hero h1,.intro-on .scroll-hint{opacity:1!important;transform:none!important}.intro-on .dock{opacity:1!important;transform:translateX(-50%)!important}.intro-on{overflow:auto!important}}
 @keyframes holo-drift{0%{background-position:20% 30%,10% 40%}50%{background-position:70% 60%,90% 70%}100%{background-position:35% 85%,40% 120%}}
 
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,32px);align-items:start}
@@ -588,7 +588,8 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
 
   /* theme */
   var t;try{t=localStorage.getItem("theme")}catch(e){}
-  if(t==="dark"||t==="light")root.setAttribute("data-theme",t);
+  if(t==="dark"||t==="light"){root.setAttribute("data-theme",t)}
+  else{var mql=window.matchMedia&&window.matchMedia("(prefers-color-scheme:light)");if(mql&&mql.matches)root.setAttribute("data-theme","light");if(mql)mql.addEventListener("change",function(e){var cur;try{cur=localStorage.getItem("theme")}catch(ex){}if(!cur)root.setAttribute("data-theme",e.matches?"light":"dark")})}
   function isDark(){return root.getAttribute("data-theme")!=="light"}
   var toggle=document.getElementById("theme-toggle");
   if(toggle)toggle.addEventListener("click",function(){
@@ -640,7 +641,8 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
     if(!intro)return;
     var played=false;try{played=sessionStorage.getItem("introPlayed")==="1"}catch(e){}
     function skip(){root.classList.remove("intro-on","landing");if(intro.parentNode)intro.parentNode.removeChild(intro)}
-    if(reduced||played||window.scrollY>0||!heroH1){skip();return}
+    var isTouch=!finePointer;
+    if(reduced||isTouch||played||window.scrollY>0||!heroH1){skip();return}
     root.classList.add("intro-on");
     var ih1=intro.querySelector(".intro-h1"),timers=[],landed=false,fast=false;
     function at(ms,fn){timers.push(setTimeout(fn,ms))}
@@ -655,12 +657,9 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
       var s=B.width/A.width,dx=B.left-O.left-(A.left-O.left)*s,dy=B.top-O.top-(A.top-O.top)*s;
       intro.classList.add("landing");root.classList.add("landing");
       var anim=ih1.animate([{transform:"translate(0px,0px) scale(1)"},{transform:"translate("+dx+"px,"+dy+"px) scale("+s+")"}],{duration:1150*k,easing:"cubic-bezier(.32,.72,0,1)",fill:"forwards"});
-      anim.onfinish=function(){
-        root.classList.add("intro-done");root.classList.remove("intro-on","landing");root.style.removeProperty("--k");
-        intro.classList.add("out");
-        setTimeout(function(){if(intro.parentNode)intro.parentNode.removeChild(intro);root.classList.remove("intro-done")},320);
-        try{sessionStorage.setItem("introPlayed","1")}catch(e){}
-      };
+      function finishIntro(){root.classList.add("intro-done");root.classList.remove("intro-on","landing");root.style.removeProperty("--k");intro.classList.add("out");setTimeout(function(){if(intro.parentNode)intro.parentNode.removeChild(intro);root.classList.remove("intro-done")},320);try{sessionStorage.setItem("introPlayed","1")}catch(e){}}
+      var endTimer=setTimeout(finishIntro,2500);
+      anim.onfinish=function(){clearTimeout(endTimer);finishIntro()};
     }
     function accelerate(){if(landed)return;fast=true;clear();intro.style.setProperty("--k",.32);intro.classList.add("p1","p2","p3");setTimeout(land,260)}
     ["wheel","touchstart","keydown","pointerdown"].forEach(function(ev){window.addEventListener(ev,accelerate,{passive:true,once:true})});
