@@ -349,6 +349,39 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
   .dock-nav a{padding:9px 10px;font-size:13px;flex:none}
 }
 /* Recognition */
+.rc-teal{--c:#30d5c8;--c-soft:rgba(48,213,200,.14)}
+:root[data-theme="light"] .rc-teal{--c:#0f8f86}
+.rc-copy{font-size:16px;line-height:1.6;max-width:70ch}
+.rc-copy strong{color:var(--c);font-weight:650}
+.rc-sub{margin-top:clamp(28px,4vw,44px)}
+.rc-sub-head{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:18px}
+.rc-sub-head h3{font-size:clamp(22px,3vw,30px);font-weight:700;letter-spacing:-.025em}
+.rc-sub-head h3 span{display:block;margin-top:2px;font-family:var(--font-mono);font-size:12.5px;font-weight:400;letter-spacing:.04em;color:var(--fg-3)}
+.rc-sub-badges{display:flex;gap:14px}
+.rc-sub-badges span{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.rc-sub-badges .rc-badge{width:56px;height:56px}
+.rc-sub-badges small{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;color:var(--fg-3);max-width:80px;line-height:1.25}
+.rc-voices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rc-voice{--r:var(--radius-lg);margin:0;padding:22px;display:flex;flex-direction:column;gap:16px;transition:transform .45s var(--ease-spring)}
+.rc-voice:hover{transform:translateY(-3px)}
+.rc-voice blockquote{margin:0;font-size:15px;line-height:1.6;color:var(--fg)}
+.rc-voice blockquote::before{content:"\201C";display:block;font-family:var(--font-display);font-size:40px;line-height:.6;height:16px;color:var(--accent);font-weight:700}
+.rc-voice figcaption{margin-top:auto;display:flex;justify-content:space-between;gap:10px;align-items:baseline;font-size:13.5px}
+.rc-voice figcaption span{font-family:var(--font-mono);font-size:11.5px;color:var(--fg-3);white-space:nowrap}
+.rc-more{margin-top:14px}
+.rc-more summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--accent);padding:6px 2px}
+.rc-more summary::-webkit-details-marker{display:none}
+.rc-more .chev{width:15px;height:15px;transition:transform .4s var(--ease-spring)}
+.rc-more[open] .chev{transform:rotate(180deg)}
+.rc-more ul{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:0 28px}
+.rc-more li{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:11px 4px;border-top:1px solid var(--hairline);font-size:14px;line-height:1.45}
+.rc-more .w{font-family:var(--font-mono);font-size:11.5px;color:var(--fg-3);text-align:right}
+.rc-more .d{grid-column:1/-1;font-family:var(--font-mono);font-size:11px;color:var(--fg-3);opacity:.8}
+.talk-badges{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.talk-badges .rc-badge{width:64px;height:64px}
+.talk-badges>span{font-size:13.5px;font-weight:600;line-height:1.3;margin-left:6px}
+.talk-badges small{font-weight:400;color:var(--fg-3);font-family:var(--font-mono);font-size:11.5px}
+@media(max-width:960px){.rc-voices,.rc-more ul{grid-template-columns:1fr}.talk-badges{justify-content:center;flex-wrap:wrap;text-align:left}}
 .rc-badge{width:72px;height:72px;border-radius:50%;object-fit:cover;flex:none;filter:drop-shadow(0 8px 14px rgba(0,0,0,.35));transition:transform .5s var(--ease-spring)}
 .rc-card:hover .rc-badge{transform:rotate(-6deg) scale(1.06)}
 .rc-badges{display:flex;gap:10px}
@@ -604,8 +637,16 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
         </div>
       </article>
 
+      <article class="rc-card rc-wide glass rc-teal">
+        <div class="rc-top"><img class="rc-badge" src="assets/img/badges/cloud-pro-collaboration.png" alt="Cloud Pro Collaboration badge" width="72" height="72" loading="lazy"><span class="rc-tag">AI Assessor</span></div>
+        <h3>AI Assessor &mdash; Cloud Poland</h3>
+        <p class="rc-org">Cloud Pro Collaboration &middot; EPAM Cloud Poland community</p>
+        <p class="rc-copy">Designing new skill assessments for <strong>AI adoption and competence</strong>, giving more than <strong>500 Cloud Poland colleagues</strong> a clear, practical way to measure where they are and where to grow with AI.</p>
+        <div class="rc-foot"><span>500+ colleagues</span><span>AI adoption &amp; competence assessments</span></div>
+      </article>
+
       <article class="rc-card glass rc-green">
-        <div class="rc-top"><span class="rc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span><span class="rc-tag">AI Contributor &middot; Writer</span></div>
+        <div class="rc-top"><span class="rc-badges"><img class="rc-badge" src="assets/img/badges/community-writer.png" alt="We Are Community Writer badge" width="72" height="72" loading="lazy"></span><span class="rc-tag">AI Contributor &middot; Writer</span></div>
         <h3>#30DaysOfClaude</h3>
         <p class="rc-org">Claude Certified Architect &middot; 30-article series</p>
         <blockquote>Outstanding work on the 30-article series focused on the important topic of Claude certification. It achieved impressive reach and generated strong engagement, earning positive feedback across the community, and helped numerous colleagues prepare for certification.</blockquote>
@@ -620,6 +661,39 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
         <div class="rc-foot"><span>02 Jul 2026</span><span>Technical Interview Dept.</span></div>
       </article>
 
+    </div>
+
+    <div class="rc-sub">
+      <div class="rc-sub-head">
+        <h3>Reader feedback<span>#30DaysOfClaude &middot; Cloud Poland community</span></h3>
+        <div class="rc-sub-badges">
+          <span><img class="rc-badge" src="assets/img/badges/valuable-article.png" alt="Valuable Article badge" width="56" height="56" loading="lazy"><small>Valuable Article</small></span>
+          <span><img class="rc-badge" src="assets/img/badges/thank-you-article.png" alt="Thank You For Your Article badge" width="56" height="56" loading="lazy"><small>Thank You</small></span>
+          <span><img class="rc-badge" src="assets/img/badges/inspiring-article.png" alt="Inspiring Article badge" width="56" height="56" loading="lazy"><small>Inspiring Article</small></span>
+        </div>
+      </div>
+      <div class="rc-voices" data-stagger>
+        <figure class="rc-voice glass"><blockquote>Thank you for putting together the Claude exam preparation document. Your effort, attention to detail, and time invested in creating such a well-organized resource are truly appreciated. It will be a valuable guide for the entire team.</blockquote><figcaption><b>Irena J.</b><span>06 Jul 2026</span></figcaption></figure>
+        <figure class="rc-voice glass"><blockquote>Thank you so much, Vamsi, for these clear and insightful Claude learning articles! Your explanations and examples are wonderfully easy to grasp. Fantastic work!</blockquote><figcaption><b>Cloud Poland reader</b></figcaption></figure>
+        <figure class="rc-voice glass"><blockquote>I appreciate the daily #30DaysofClaude articles. I have found them insightful and educational. This content will help me focus on the right concepts for the exam.</blockquote><figcaption><b>Will R.</b><span>24 Jun 2026</span></figcaption></figure>
+        <figure class="rc-voice glass"><blockquote>Thank you for really useful 30-days Claude Certification preparation articles!</blockquote><figcaption><b>Dzmitry R.</b><span>27 Jun 2026</span></figcaption></figure>
+        <figure class="rc-voice glass"><blockquote>Thank you for the articles, it really helped to prepare for the exam :)</blockquote><figcaption><b>Anupam K.</b><span>17 Sep 2026</span></figcaption></figure>
+        <figure class="rc-voice glass"><blockquote>I want to thank you for these articles. I&rsquo;ll use them to finish getting ready!</blockquote><figcaption><b>Przemyslaw C.</b><span>05 Jun 2026</span></figcaption></figure>
+      </div>
+      <details class="rc-more">
+        <summary>More comments from colleagues (9)<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <ul>
+          <li><span class="q">Great content for the exam prep</span><span class="w">Anupam K.</span><span class="d">17 Sep 2026</span></li>
+          <li><span class="q">Thanks</span><span class="w">Yuliya B.</span><span class="d">18 Jul 2026</span></li>
+          <li><span class="q">Thank you for your work!</span><span class="w">Nirav J.</span><span class="d">05 Jul 2026</span></li>
+          <li><span class="q">Thank you for this article.</span><span class="w">Apoorva U.</span><span class="d">23 Jun 2026</span></li>
+          <li><span class="q">Thanks for the Claude AI article series :)</span><span class="w">Mikhail B.</span><span class="d">08 Jun 2026</span></li>
+          <li><span class="q">Thanks for the article. It really helps.</span><span class="w">Danilo N.</span><span class="d">03 Jun 2026</span></li>
+          <li><span class="q">Thank you for the article!</span><span class="w">Roman D.</span><span class="d">30 May 2026</span></li>
+          <li><span class="q">Thanks for this really insightful, motivational, and helpful article!</span><span class="w">Sebastian C.</span><span class="d">EPAM Poland community</span></li>
+          <li><span class="q">Awesome article!</span><span class="w">Nikolai P.</span><span class="d">29 May 2026</span></li>
+        </ul>
+      </details>
     </div>
 
     <details class="rc-series glass">
@@ -719,6 +793,7 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
       <div class="talk-info">
         <h3>The Blind Spots We Didn't Know We Had &mdash; Splitting Observability Between Datadog & Azure Log Analytics</h3>
         <div class="talk-meta">15 April 2026 &middot; 19:00 &ndash; 19:45<br>EPAM Warsaw Office<br>82nd Microsoft Azure User Group Poland</div>
+        <div class="talk-badges"><img class="rc-badge" src="assets/img/badges/presentation-talent.png" alt="Presentation Talent badge" width="64" height="64" loading="lazy"><img class="rc-badge" src="assets/img/badges/sharing-knowledge.png" alt="Sharing Knowledge badge" width="64" height="64" loading="lazy"><span>Presentation Talent &amp; Sharing Knowledge<br><small>Recognised by the Azure Meetup #82 organisers</small></span></div>
         <div class="talk-stats">
           <div class="stat"><span class="num">112</span><span class="label">Registered</span></div>
           <div class="stat"><span class="num">65</span><span class="label">Attended</span></div>
