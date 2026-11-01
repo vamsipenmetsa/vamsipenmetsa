@@ -341,6 +341,73 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
 .color-panel-theme .sun{display:none}
 :root[data-theme="light"] .color-panel-theme .sun{display:block}
 :root[data-theme="light"] .color-panel-theme .moon{display:none}
+
+@media(max-width:600px){
+  .dock{min-width:0}
+  .dock-nav{min-width:0;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .dock-nav::-webkit-scrollbar{display:none}
+  .dock-nav a{padding:9px 10px;font-size:13px;flex:none}
+}
+/* Recognition */
+.rc-badge{width:72px;height:72px;border-radius:50%;object-fit:cover;flex:none;filter:drop-shadow(0 8px 14px rgba(0,0,0,.35));transition:transform .5s var(--ease-spring)}
+.rc-card:hover .rc-badge{transform:rotate(-6deg) scale(1.06)}
+.rc-badges{display:flex;gap:10px}
+.rc-tag-ghost{color:var(--fg-2);background:transparent;box-shadow:inset 0 0 0 1px var(--hairline)}
+.rc-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 28px;margin-top:10px}
+.rc-item{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.rc-item h4{font-size:16px;font-weight:650;letter-spacing:-.01em;font-family:var(--font-body)}
+.rc-item blockquote{font-size:14.5px;line-height:1.6}
+.rc-trio .rc-item:last-child blockquote{font-size:15.5px}
+.rc-stats{--r:var(--radius-xl);display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:clamp(18px,3vw,28px);margin-bottom:16px}
+.rc-stats .stat{align-items:center;text-align:center;padding:4px 8px}
+.rc-stats .stat+.stat{box-shadow:-1px 0 0 var(--hairline)}
+.rc-stats .num{font-size:clamp(28px,4vw,40px)}
+.rc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.rc-card{--r:var(--radius-xl);--c:var(--accent);--c-soft:var(--accent-soft);padding:clamp(22px,3vw,30px);display:flex;flex-direction:column;gap:12px;transition:transform .45s var(--ease-spring)}
+.rc-card:hover{transform:translateY(-4px)}
+.rc-card::before{background:linear-gradient(135deg,var(--c-soft) 0%,rgba(255,255,255,0) 45%,rgba(255,255,255,0) 70%,rgba(255,255,255,.08) 100%);opacity:1}
+.rc-wide{grid-column:1/-1}
+.rc-gold{--c:#ffb930;--c-soft:rgba(255,185,48,.16)}
+.rc-violet{--c:#bf5af2;--c-soft:rgba(191,90,242,.15)}
+.rc-blue{--c:#2997ff;--c-soft:rgba(41,151,255,.14)}
+.rc-green{--c:#34c759;--c-soft:rgba(52,199,89,.13)}
+.rc-orange{--c:#ff6b35;--c-soft:rgba(255,107,53,.14)}
+:root[data-theme="light"] .rc-gold{--c:#b97800}
+:root[data-theme="light"] .rc-violet{--c:#8e3cc4}
+:root[data-theme="light"] .rc-blue{--c:#0066cc}
+:root[data-theme="light"] .rc-green{--c:#1f8f3d}
+:root[data-theme="light"] .rc-orange{--c:#d9480f}
+.rc-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.rc-icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:var(--c-soft);color:var(--c);box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--c) 28%,transparent)}
+.rc-icon svg{width:22px;height:22px}
+.rc-tag{font-family:var(--font-mono);font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--c);background:var(--c-soft);padding:5px 11px;border-radius:999px;box-shadow:inset 0 0 0 1px color-mix(in oklab,var(--c) 25%,transparent)}
+.rc-card h3{font-size:clamp(21px,2.4vw,26px);font-weight:650;line-height:1.2;letter-spacing:-.02em;margin-top:6px}
+.rc-org{color:var(--fg-2);font-size:14px}
+.rc-card blockquote{margin:0;position:relative;padding-left:16px;font-size:15.5px;line-height:1.6;color:var(--fg);box-shadow:-2px 0 0 0 color-mix(in oklab,var(--c) 70%,transparent)}
+.rc-card blockquote cite{display:block;margin-top:8px;font-style:normal;font-family:var(--font-mono);font-size:12px;letter-spacing:.03em;color:var(--fg-3)}
+.rc-quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 28px;margin-top:4px}
+.rc-quotes blockquote:first-child{grid-row:span 2;align-self:start}
+.rc-quotes blockquote:last-child{font-size:15px}
+.rc-foot{margin-top:auto;padding-top:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 16px;font-family:var(--font-mono);font-size:12px;color:var(--fg-3);border-top:1px solid var(--hairline)}
+.rc-series{--r:var(--radius-xl);margin-top:16px;padding:6px}
+.rc-series summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;border-radius:calc(var(--radius-xl) - 6px);transition:background .3s}
+.rc-series summary::-webkit-details-marker{display:none}
+.rc-series summary:hover{background:var(--glass-strong)}
+.rc-series-title b{display:block;font-size:18px;font-weight:650;letter-spacing:-.02em}
+.rc-series-title span{display:block;margin-top:2px;color:var(--fg-2);font-size:13.5px}
+.rc-series .chev{width:18px;height:18px;flex:none;color:var(--fg-3);transition:transform .4s var(--ease-spring)}
+.rc-series[open] .chev{transform:rotate(180deg)}
+.rc-list{list-style:none;margin:0;padding:6px 14px 14px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 28px}
+.rc-list li{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:baseline;padding:10px 6px;border-top:1px solid var(--hairline);font-size:14px;line-height:1.4}
+.rc-list .n{font-family:var(--font-mono);font-size:12px;color:var(--accent)}
+.rc-list .t{color:var(--fg)}
+.rc-list .d{font-family:var(--font-mono);font-size:11.5px;color:var(--fg-3);white-space:nowrap}
+@media(max-width:960px){
+  .rc-grid,.rc-quotes,.rc-list,.rc-trio{grid-template-columns:1fr}
+  .rc-quotes blockquote:first-child{grid-row:auto}
+  .rc-stats{grid-template-columns:repeat(2,1fr);row-gap:18px}
+  .rc-stats .stat:nth-child(odd){box-shadow:none}
+}
 </style>
 </head>
 <body>
@@ -358,6 +425,7 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
     <span class="dock-ind" aria-hidden="true"></span>
     <a href="#about"><span class="long">About</span><span class="short">About</span></a>
     <a href="#experience"><span class="long">Experience</span><span class="short">Work</span></a>
+    <a href="#recognition"><span class="long">Recognition</span><span class="short">Awards</span></a>
     <a href="#certifications"><span class="long">Certifications</span><span class="short">Certs</span></a>
     <a href="#talk"><span class="long">Talk</span><span class="short">Talk</span></a>
     <a href="#products"><span class="long">Products</span><span class="short">Products</span></a>
@@ -465,6 +533,7 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
     <section class="section reveal" id="highlights">
       <div class="sec-head"><h2>Highlights</h2><span class="meta">Career</span></div>
       <div class="timeline glass" data-stagger>
+        <div class="tl-row tl-champion"><div class="logo-tile"><svg viewBox="0 0 52 52"><rect width="52" height="52" rx="15" fill="#b97800"/><path d="M18 14h16v9a8 8 0 0 1-16 0v-9zM18 17h-4v3a4 4 0 0 0 4 4M34 17h4v3a4 4 0 0 1-4 4M26 31v5M20 38h12" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h3>CEO Award <span class="tag" style="background:rgba(255,185,48,.2);color:#ffb930;box-shadow:none;border:1px solid rgba(255,185,48,.3)">Bravo</span></h3><div class="sub">EPAM AI Ambassador Programme</div></div><div class="date"><span class="d1">2025</span></div></div>
         <div class="tl-row tl-champion"><div class="logo-tile"><svg viewBox="0 0 52 52"><rect width="52" height="52" rx="15" fill="#0078d4"/><text x="26" y="28" text-anchor="middle" fill="#fff" font-size="11" font-weight="700" font-family="system-ui">AI</text><text x="26" y="41" text-anchor="middle" fill="#fff" font-size="9" font-weight="600" font-family="system-ui">LEAD</text></svg></div><div><h3>AI Adoption Lead <span class="tag" style="background:rgba(0,120,212,.2);color:#2997ff;box-shadow:none;border:1px solid rgba(0,120,212,.3)">LSEG</span></h3><div class="sub">21 Engineers · Agentic AI · MaaS Platform</div></div><div class="date"><span class="d1"><span class="now">Active</span></span></div></div>
         <div class="tl-row"><div class="logo-tile"><svg viewBox="0 0 52 52"><rect width="52" height="52" rx="15" fill="#0078d4"/><text x="26" y="33" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="system-ui">12+</text></svg></div><div><h3>Certifications</h3><div class="sub">Azure, AWS &amp; GitHub</div></div><div class="date"><span class="d1"><span class="now">Active</span></span></div></div>
         <div class="tl-row"><div class="logo-tile"><svg viewBox="0 0 52 52"><rect width="52" height="52" rx="15" fill="#ff5722"/><text x="26" y="32" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" font-family="system-ui">201+</text></svg></div><div><h3>Technical Interviews</h3><div class="sub">Azure, DevOps, SRE, AWS</div></div><div class="date"><span class="d1">Conducted</span></div></div>
@@ -474,6 +543,124 @@ footer{padding:28px 0 calc(24px + env(safe-area-inset-bottom,0px));text-align:ce
       </div>
     </section>
   </div>
+
+  <section class="section reveal" id="recognition">
+    <div class="sec-head"><h2>Recognition</h2><span class="meta">Awards &amp; Feedback</span></div>
+
+    <div class="rc-stats glass" data-stagger>
+      <div class="stat"><span class="num">CEO</span><span class="label">Award Winner</span></div>
+      <div class="stat"><span class="num">21</span><span class="label">Engineers Enabled</span></div>
+      <div class="stat"><span class="num">30</span><span class="label">Claude Articles</span></div>
+      <div class="stat"><span class="num">200+</span><span class="label">Tech Interviews</span></div>
+    </div>
+
+    <div class="rc-grid" data-stagger>
+
+      <article class="rc-card glass rc-gold">
+        <div class="rc-top"><img class="rc-badge" src="assets/img/badges/ceo-bravo.png" alt="EPAM.AI CEO's Bravo badge" width="72" height="72" loading="lazy"><span class="rc-tag">CEO Award</span></div>
+        <h3>CEO&rsquo;s Bravo &mdash; AI Adoption</h3>
+        <p class="rc-org">EPAM Systems &middot; AI Ambassador Programme</p>
+        <blockquote>Thank you for your outstanding dedication and the remarkable impact you&rsquo;ve made last year. Your passion for sharing AI knowledge, driving social learning, and guiding colleagues through AI adoption has been instrumental in accelerating our journey toward becoming an AI&#8209;native organization and a leader in enterprise AI transformations.</blockquote>
+        <div class="rc-foot"><span>For AI adoption impact</span><span>From the CEO</span></div>
+      </article>
+
+      <article class="rc-card glass rc-violet">
+        <div class="rc-top"><img class="rc-badge" src="assets/img/badges/ai-ambassador.png" alt="EPAM.AI Ambassador badge" width="72" height="72" loading="lazy"><span class="rc-tag">AI Ambassador</span></div>
+        <h3>EPAM AI Ambassador</h3>
+        <p class="rc-org">Going Extra Mile &middot; EPAM.AI</p>
+        <blockquote>Your dedication to productivity enhancement through GenAI utilization, coupled with your innovative approach and community engagement, has been truly inspiring. Your impact is undeniable.</blockquote>
+        <div class="rc-foot"><span>06 May 2025</span><span>From EPAM.AI</span></div>
+      </article>
+
+      <article class="rc-card rc-wide glass rc-blue">
+        <div class="rc-top"><span class="rc-tag">AI Adoption Lead</span><span class="rc-tag rc-tag-ghost">Going Extra Mile</span></div>
+        <h3>AI Champion &mdash; LSEG MaaS</h3>
+        <p class="rc-org">Leading AI adoption for a 21-engineer team to improve productivity and drive customer business value</p>
+        <div class="rc-trio">
+          <div class="rc-item">
+            <img class="rc-badge" src="assets/img/badges/ai-value-driver.png" alt="EPAM AI Value Driver badge" width="72" height="72" loading="lazy">
+            <h4>AI Value Driver</h4>
+            <blockquote>
+              Thank you for proactively exploring and applying AI solutions! You are going above and beyond the AI Champion role on the [LSEG MaaS] project. Your proactive efforts and clear guidelines are creating the space and confidence our team needs to adopt and experiment with complex AI usage patterns.
+              <cite>Delivery Central &middot; 01 Nov 2026</cite>
+            </blockquote>
+          </div>
+          <div class="rc-item">
+            <img class="rc-badge" src="assets/img/badges/microsoft-ai-champion.png" alt="Microsoft AI Champion badge" width="72" height="72" loading="lazy">
+            <h4>Microsoft AI Champion</h4>
+            <blockquote>
+              Thank you for going above and beyond in your AI Champion role on the [LSEG MaaS] project. Your proactive efforts and clear guidelines are creating the space and confidence our team needs to adopt and experiment with complex AI usage patterns. Your contribution is truly appreciated.
+              <cite>Patryk Lesiak &middot; Delivery Manager &middot; 30 Oct 2026</cite>
+            </blockquote>
+          </div>
+          <div class="rc-item">
+            <img class="rc-badge" src="assets/img/badges/ai-maturity-champion.png" alt="EPAM AI Maturity AI Champion badge" width="72" height="72" loading="lazy">
+            <h4>EPAM AI Maturity Champion</h4>
+            <blockquote>
+              Thank you for moving your project towards AI Maturity growth and driving innovations!
+              <cite>EPAM AI Maturity Programme</cite>
+            </blockquote>
+          </div>
+        </div>
+      </article>
+
+      <article class="rc-card glass rc-green">
+        <div class="rc-top"><span class="rc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span><span class="rc-tag">AI Contributor &middot; Writer</span></div>
+        <h3>#30DaysOfClaude</h3>
+        <p class="rc-org">Claude Certified Architect &middot; 30-article series</p>
+        <blockquote>Outstanding work on the 30-article series focused on the important topic of Claude certification. It achieved impressive reach and generated strong engagement, earning positive feedback across the community, and helped numerous colleagues prepare for certification.</blockquote>
+        <div class="rc-foot"><span>6 &times; recognition &middot; 03 Jul 2026</span><span>From EPAM.AI</span></div>
+      </article>
+
+      <article class="rc-card glass rc-orange">
+        <div class="rc-top"><span class="rc-badges"><img class="rc-badge" src="assets/img/badges/technical-interviewer.png" alt="EPAM Technical Interviewer badge — reached 101" width="72" height="72" loading="lazy"><img class="rc-badge" src="assets/img/badges/interview-contributor-l2.png" alt="EPAM Global Technical Interview Service Contributor L2 badge" width="72" height="72" loading="lazy"></span><span class="rc-tag">Technical Interviewer</span></div>
+        <h3>200+ Technical Interviews</h3>
+        <p class="rc-org">Technical Interview Contributor &middot; EPAM</p>
+        <blockquote>Your professionalism and competent assistance are greatly appreciated!</blockquote>
+        <div class="rc-foot"><span>02 Jul 2026</span><span>Technical Interview Dept.</span></div>
+      </article>
+
+    </div>
+
+    <details class="rc-series glass">
+      <summary>
+        <span class="rc-series-title"><b>#30DaysOfClaude</b><span>30 articles published to the Cloud Poland community &middot; 14 May &ndash; 22 Jun 2026</span></span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <ol class="rc-list">
+          <li><span class="n">01</span><span class="t">Claude Certified Architect Exam Overview</span><span class="d">14 May</span></li>
+          <li><span class="n">02</span><span class="t">The Agentic Loop — How Claude Agents Actually Work</span><span class="d">14 May</span></li>
+          <li><span class="n">03</span><span class="t">Tool Use — Definitions, Descriptions, and Structured Output</span><span class="d">14 May</span></li>
+          <li><span class="n">04</span><span class="t">tool_choice Modes and Parallel Tool Calls</span><span class="d">15 May</span></li>
+          <li><span class="n">05</span><span class="t">Hub-and-Spoke Architecture and the Task Tool</span><span class="d">18 May</span></li>
+          <li><span class="n">06</span><span class="t">Context Passing and Parallel Subagents</span><span class="d">19 May</span></li>
+          <li><span class="n">07</span><span class="t">Agent SDK Hooks — Deterministic Compliance</span><span class="d">20 May</span></li>
+          <li><span class="n">08</span><span class="t">Structured Errors and Retry Logic</span><span class="d">21 May</span></li>
+          <li><span class="n">09</span><span class="t">MCP Configuration — Secrets and Primitives</span><span class="d">22 May</span></li>
+          <li><span class="n">10</span><span class="t">Built-in Tools — Grep, Glob, Read, Write, Edit, Bash</span><span class="d">25 May</span></li>
+          <li><span class="n">11</span><span class="t">Few-Shot Prompting — Examples That Work</span><span class="d">26 May</span></li>
+          <li><span class="n">12</span><span class="t">Explicit Criteria — Reducing False Positives</span><span class="d">27 May</span></li>
+          <li><span class="n">13</span><span class="t">CLAUDE.md Hierarchy and Configuration</span><span class="d">28 May</span></li>
+          <li><span class="n">14</span><span class="t">Skills and Custom Commands</span><span class="d">29 May</span></li>
+          <li><span class="n">15</span><span class="t">CI/CD with Claude Code</span><span class="d">01 Jun</span></li>
+          <li><span class="n">16</span><span class="t">System Prompt Drift — Architecture and Boundaries</span><span class="d">02 Jun</span></li>
+          <li><span class="n">17</span><span class="t">Planning Mode vs Direct Execution</span><span class="d">03 Jun</span></li>
+          <li><span class="n">18</span><span class="t">Custom Commands and Path-Specific Rules</span><span class="d">04 Jun</span></li>
+          <li><span class="n">19</span><span class="t">tool_use and JSON Schema for Structured Extraction</span><span class="d">05 Jun</span></li>
+          <li><span class="n">20</span><span class="t">Self-Correction and Validation Patterns</span><span class="d">08 Jun</span></li>
+          <li><span class="n">21</span><span class="t">Multi-Pass Review — Systematic Coverage for Complex Code</span><span class="d">09 Jun</span></li>
+          <li><span class="n">22</span><span class="t">Context Window Management — Placement, Attention, and Information Survival</span><span class="d">10 Jun</span></li>
+          <li><span class="n">23</span><span class="t">Escalation Patterns — Reliable Triggers and Decision Flows</span><span class="d">11 Jun</span></li>
+          <li><span class="n">24</span><span class="t">Confidence Calibration — Stratified Evaluation and Field-Level Scoring</span><span class="d">12 Jun</span></li>
+          <li><span class="n">25</span><span class="t">Batch API — 50% Cost Savings for Asynchronous Workloads</span><span class="d">15 Jun</span></li>
+          <li><span class="n">26</span><span class="t">Case Facts and Conversation Management — Persistent State for Long Conversations</span><span class="d">16 Jun</span></li>
+          <li><span class="n">27</span><span class="t">Conversation Management and Context Efficiency — Scratchpads and Persistence</span><span class="d">17 Jun</span></li>
+          <li><span class="n">28</span><span class="t">Provenance and Multi-Source Synthesis — Attribution and Conflict Resolution</span><span class="d">18 Jun</span></li>
+          <li><span class="n">29</span><span class="t">Scenario — Support Agent Architecture and Decision Points</span><span class="d">19 Jun</span></li>
+          <li><span class="n">30</span><span class="t">Scenario — CI/CD Pipeline and Code Generation with Claude</span><span class="d">22 Jun</span></li>
+      </ol>
+    </details>
+  </section>
 
   <section class="section reveal" id="certifications">
     <div class="sec-head"><h2>Certifications</h2><span class="meta">12+ Certified</span></div>
